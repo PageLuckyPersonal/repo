@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\PAGEL\dev\snack-machine\snack-machine.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="container">
+    <h1>Snack Machine</h1>
+<p>Please select from one category at a time.</p>
+<button><a href="#" onclick="toggle_visibility('snack-flexbox-sweets');">Sweets</a></button>
+<button><a href="#" onclick="toggle_visibility('snack-flexbox-savory');">Savory</a></button>
+<button><a href="#" onclick="toggle_visibility('snack-flexbox-chips');">Chips</a></button>
+<button><a href="#" onclick="toggle_visibility('snack-flexbox-bars');">Bars</a></button>
+<button><a href="#" onclick="toggle_visibility('snack-flexbox-breads');">Breads</a></button>
+
+
+        <div id="snack-flexbox-sweets">
+            <div class="snack-item">
+                <div id="fiber">
+            <h3 class="snack-h3">Fiber One Cookies</h3>
+            <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\fiber-one-cookie-snacks.jpg" alt=""/>
+                </div>    
+        </div>
+            <div class="snack-item">
+                <div id="pocky">
+                    <h3 class="snack-h3">Japanese Pocky Sticks</h3>
+            <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\japanese-pocky-sticks-snacks.jpg" alt=""/>
+                </div>    
+        </div>
+            <div class="snack-item">
+                <div id="milano">
+                    <h3 class="snack-h3">Milano Cookies</h3>
+            <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\milano-dark-chocolate-cookies-snacks.jpg" alt=""/>
+                </div>    
+        </div>
+            <div class="snack-item">
+                <div id="cookies">
+            <h3 class="snack-h3">Mixed Cookies Pack</h3>
+            <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\mixed-cookies-pack-snacks.jpg" alt=""/>
+                </div>    
+        </div>
+            <div class="snack-item">
+                <div id="krispies">
+                    <h3 class="snack-h3">Rice Krispies Treats</h3>
+            <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\rice-krispies-treats-mix-box.jpg" alt=""/>
+                </div>    
+        </div>
+            <div class="snack-item">
+                <div id="rainbow">
+                    <h3 class="snack-h3">Keebler Rainbow Cookies</h3>
+            <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\taste-the-rainbow-cookies-pack-snacks.jpg" alt=""/>
+                </div>    
+        </div>
+            <div class="snack-item">
+                <div id="choco-almond">
+                    <h3 class="snack-h3">Dark Chocolate Almonds</h3>
+            <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\chocolate-oven-roasted-almonds.jpg" alt=""/>
+                </div>    
+        </div>
+        <a href="#" onclick="toggle_visibility('snack-flexbox-sweets');">Done adding sweets?</a>
+
+        </div>
+
+        <div id="snack-flexbox-savory">
+                <div class="snack-item">
+                    <div id="jerky">
+                        <h3 class="snack-h3">Jack Links Beef Jerky</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\beef-jerky-packs-snacks.jpg" alt=""/>
+                    </div>    
+                </div>
+                <div class="snack-item">
+                    <div id="diamond">
+                        <h3 class="snack-h3">Blue Diamond 100 Calorie Almonds</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\blue-daimond-lightly-salted-almonds-snacks.jpg" alt=""/>
+                    </div>    
+                </div>
+                <div class="snack-item">
+                    <div id="edamame">
+                        <h3 class="snack-h3">Sea Salt Edamame</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\edamame-nuts-snacks.jpg" alt=""/>
+                    </div>    
+                </div>
+                <div class="snack-item">
+                    <div id="planters">
+                        <h3 class="snack-h3">Planters Nutrition Nut Packs</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\planters-nutrition-mixed-nuts-snacks.jpg" alt=""/>
+                    </div>    
+                </div>
+                <div class="snack-item">
+                    <div id="planters-pack">
+                        <h3 class="snack-h3">Planters Mixed Nuts Variety Pack</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\planters-mixed-nuts-variety-pack-snacks.jpg" alt=""/>
+                    </div>
+                </div>
+                <a href="#" onclick="toggle_visibility('snack-flexbox-savory');">Done adding savory?</a>
+        </div>
+     
+            <div id="snack-flexbox-chips">
+                    <div class="snack-item">
+                        <div id="spicy-cheezits">
+                        <h3 class="snack-h3">Spicy Cheez-Its</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\cheez-it-hot-n-spicy-snacks.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="snack-item">
+                        <div id="cheezits-variety">
+                        <h3 class="snack-h3">Cheeze-Its Variety Pack</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\cheez-it-mixed-chips-snacks-pack.jpg" alt=""/>
+                        </div>
+                     </div>
+                    <div class="snack-item">
+                        <div id="regular-cheez">
+                        <h3 class="snack-h3">Regular Cheez-Its</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\cheez-its-originals.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="snack-item">
+                        <div id="chips-pack">
+                        <h3 class="snack-h3">Simply Mixed Chips Pack</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\frito-lay-mixed-simple-chips-snacks.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="snack-item">
+                        <div id="popped">
+                        <h3 class="snack-h3">Baked Popped Chips Mix</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\frito-lay-popped-chips-mixed-snacks.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="snack-item">
+                        <div id="fish">
+                        <h3 class="snack-h3">Goldfish</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\goldfish-snacks-minis.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="snack-item">
+                        <div id="crisps">
+                        <h3 class="snack-h3">Eaten Path Veggie Crisps</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\off-the-eaten-path-veggie-crisps.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="snack-item">
+                        <div id="straws">
+                        <h3 class="snack-h3">Garden Veggie Straws</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\veggie-straws-potato-snack.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <a href="#" onclick="toggle_visibility('snack-flexbox-chips');">Done adding chips?</a>
+             </div>
+     
+             <div id="snack-flexbox-bars">
+                    <div class="snack-item">
+                        <div id="protein-bars">
+                        <h3 class="snack-h3">Almond Butter Breakfast Protein Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\almond-butter-short-bar.jpg" alt=""/>
+                        </div>    
+                </div>
+                    <div class="snack-item">
+                        <div id="caramel-bars">
+                        <h3 class="snack-h3">Caramel Almond Sea Salt Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\caramel-almond-and-sea-salt-long-bar.jpg" alt=""/>
+                        </div>   
+                </div>
+                    <div class="snack-item">
+                        <div id="breakfast-bars">
+                        <h3 class="snack-h3">Chocolate Peanut Butter Breakfast Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\chocolate-peanut-butter-short-bar.jpg" alt=""/>
+                         </div>   
+                </div>
+                    <div class="snack-item">
+                        <div id="cherry-bars">
+                        <h3 class="snack-h3">Dark Chocolate Cherry Cashew Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\dark-chocolate-cherry-cashew-long-bar.jpg" alt=""/>
+                         </div>    
+                </div>               
+                    <div class="snack-item">
+                        <div id="chunk-bars">
+                        <h3 class="snack-h3">Dark Chocolate Chunk Breakfast Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\dark-chocolate-chunk-short-bar.jpg" alt=""/>
+                         </div>   
+                </div>
+                    <div class="snack-item">
+                        <div id="choco-bars">
+                        <h3 class="snack-h3">Dark Chocolate Nuts Sea Salt Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\dark-chocolate-nuts-and-sea-salt-long-bar.jpg" alt=""/>
+                         </div>    
+                </div>
+                    <div class="snack-item">
+                        <div id="c-luna">
+                        <h3 class="snack-h3">Chocolate Luna Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\luna-chocolate-bars-snacks.jpg" alt=""/>
+                        </div>
+                    </div>
+                    <div class="snack-item">
+                        <div id="white-luna">
+                        <h3 class="snack-h3">White Chocolate Luna Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\luna-white-chocolate-macademia-nuts-bars-snacks.jpg" alt=""/>
+                         </div>    
+                </div>
+                    <div class="snack-item">
+                        <div id="pbc-bars">
+                        <h3 class="snack-h3">Peanut Butter Dark Chocolate Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\peanut-butter-dark-chocolate-long-bar.jpg" alt=""/>
+                        </div>    
+                </div>
+                    <div class="snack-item">
+                        <div id="blueberry">
+                        <h3 class="snack-h3">Pomegranate Blueberry Pistachio Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\pomegranate-blueberry-pistachio-long-bar.jpg" alt=""/>
+                        </div>    
+                </div>
+                    <div class="snack-item">
+                        <div id="dipps">
+                        <h3 class="snack-h3">Quaker Chewy Dipps Bars</h3>
+                    <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\quaker-chewy-dipps-mixed-box-snacks.jpg" alt=""/>
+                        </div>    
+                    </div>
+<a href="#" onclick="toggle_visibility('snack-flexbox-bars');">Done adding bars?</a>
+                </div>
+     
+             <div id="snack-flexbox-breads">
+                 <div class="snack-item">
+                    <div id="apple">
+                        <h3 class="snack-h3">Apple Cinnamon Oatmeal Pack</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\apple-cinammin-oatmeal-snacks-pack.jpg" alt=""/>
+                    </div>    
+                 </div>
+                <div class="snack-item">
+                    <div id="nature-valley">
+                        <h3 class="snack-h3">Nature Valley Oats Honey Granola Bars</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\nature-valley-granola-bars-snacks.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="snack-item">
+                    <div id="cracker">
+                        <h3 class="snack-h3">Peanut Butter Cracker Mix Packs</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\peanut-butter-packs-snacks.jpg" alt=""/>
+                    </div>
+                </div>
+                    <div class="snack-item">
+                 <div id="ritz-cracker">
+                        <h3 class="snack-h3">Ritz Crackers</h3>
+                        <img class="snack-image" src="C:\Users\PAGEL\dev\snack-machine\images\ritz-butter-crackers.jpg" alt=""/>
+                    </div>
+                    </div>
+<a href="#" onclick="toggle_visibility('snack-flexbox-breads');">Done adding breads?</a>
+</div>
+
+<button onclick="snacksCollection()" id="submit-btn">Submit</button>
+
+
+<script>
+
+function toggle_visibility(id) {
+       var snackBox = document.getElementById(id);
+       if(snackBox.style.display == 'flex')
+       snackBox.style.display = 'none';
+       else
+          snackBox.style.display = 'flex';
+    }
+
+    
+//load when ready
+$( document ).ready(function() {
+    console.log( "ready!" );
+
+    var elements = document.getElementsByClassName('class2');
+    console.log(elements);
+//write a function to change css
+function classToggle() {
+    this.classList.toggle('class1');
+    this.classList.toggle('class2');
+    for(i=0; i<elements.length; i++){
+        console.log(elements);
+    }
+}
+
+document.querySelector('#fiber').addEventListener('click', classToggle);
+document.querySelector('#pocky').addEventListener('click', classToggle);
+document.querySelector('#milano').addEventListener('click', classToggle);
+document.querySelector('#cookies').addEventListener('click', classToggle);
+document.querySelector('#krispies').addEventListener('click', classToggle);
+document.querySelector('#rainbow').addEventListener('click', classToggle);
+document.querySelector('#choco-almond').addEventListener('click', classToggle);
+document.querySelector('#jerky').addEventListener('click', classToggle);
+document.querySelector('#diamond').addEventListener('click', classToggle);
+document.querySelector('#edamame').addEventListener('click', classToggle);
+document.querySelector('#planters').addEventListener('click', classToggle);
+document.querySelector('#planters-pack').addEventListener('click', classToggle);
+document.querySelector('#spicy-cheezits').addEventListener('click', classToggle);
+document.querySelector('#cheezits-variety').addEventListener('click', classToggle);
+document.querySelector('#regular-cheez').addEventListener('click', classToggle);
+document.querySelector('#chips-pack').addEventListener('click', classToggle);
+document.querySelector('#popped').addEventListener('click', classToggle);
+document.querySelector('#fish').addEventListener('click', classToggle);
+document.querySelector('#crisps').addEventListener('click', classToggle);
+document.querySelector('#straws').addEventListener('click', classToggle);
+document.querySelector('#protein-bars').addEventListener('click', classToggle);
+document.querySelector('#caramel-bars').addEventListener('click', classToggle);
+document.querySelector('#breakfast-bars').addEventListener('click', classToggle);
+document.querySelector('#cherry-bars').addEventListener('click', classToggle);
+document.querySelector('#chunk-bars').addEventListener('click', classToggle);
+document.querySelector('#choco-bars').addEventListener('click', classToggle);
+document.querySelector('#c-luna').addEventListener('click', classToggle);
+document.querySelector('#white-luna').addEventListener('click', classToggle);
+document.querySelector('#pbc-bars').addEventListener('click', classToggle);
+document.querySelector('#blueberry').addEventListener('click', classToggle);
+document.querySelector('#dipps').addEventListener('click', classToggle);
+document.querySelector('#apple').addEventListener('click', classToggle);
+document.querySelector('#nature-valley').addEventListener('click', classToggle);
+document.querySelector('#cracker').addEventListener('click', classToggle);
+document.querySelector('#ritz-cracker').addEventListener('click', classToggle);
+
+//object constructor for snacks
+    function Snack(name, url){
+        this.productName = name; 
+        this.productUrl = url;      
+    }
+
+/* example of assigning variable to html element
+    document.getElementById(fiber)
+    var cookie = new Snack('fiber one cookies', '')
+    console.log(cookie);*/
+
+    //an object variable assigned to each snack
+    var cookie = new Snack('fiber one cookies', '')
+    var pocky = new Snack('Japanese Pocky Sticks', '');
+    var milano = new Snack('Milano Cookies', '');
+    var cookiePack = new Snack('Mixed Cookies Pack', '');
+    var krispies = new Snack('Rice Krispies Treats', '');
+    var rainbow = new Snack('Keebler Rainbow Cookies', '');
+    var chocoAlmonds = new Snack('Dark Chocolate Almonds', '');
+    var jerky = new Snack('Jack Links Beef Jerky', '');
+    var diamond = new Snack('Blue Diamond 100 Calorie Almonds', '');
+    var edamame = new Snack('Sea Salt Edamame', '');
+    var nuts = new Snack('Planters Nutrition Nut Packs', '');
+    var nutsPack = new Snack('Planters Mixed Nuts Variety Pack', '');
+    var spicy = new Snack('Spicy Cheez-Its', '');
+    var cheezPack = new Snack('Cheeze-Its Variety Pack', '');
+    var cheez = new Snack('Regular Cheez-Its', '');
+    var chipsPack = new Snack('Simply Mixed Chips Pack', '');
+    var bakedChips = new Snack('Baked Popped Chips Mix', '');
+    var fish = new Snack('Goldfish', '');
+    var veggie = new Snack('Eaten Path Veggie Crisps', '');
+    var straws = new Snack('Garden Veggie Straws', '');
+    var butterBar = new Snack('Almond Butter Breakfast Protein Bars', '');
+    var caramelBar = new Snack('Caramel Almond Sea Salt Bars', '');
+    var peanutBar = new Snack('Chocolate Peanut Butter Breakfast Bars', '');
+    var cherryBar = new Snack('Dark Chocolate Cherry Cashew Bars', '');
+    var chunkBar  = new Snack('Dark Chocolate Chunk Breakfast Bars', '');
+    var darkBar = new Snack('Dark Chocolate Nuts Sea Salt Bars', '');
+    var cLuna = new Snack('Chocolate Luna Bars', '');
+    var wLuna = new Snack('White Chocolate Luna Bars', '');
+    var peanutBar = new Snack('Peanut Butter Dark Chocolate Bars', '');
+    var blueberry = new Snack('Pomegranate Blueberry Pistachio Bars', '');
+    var dipps = new Snack('Quaker Chewy Dipps Bars', '');
+    var oatmeal = new Snack('Apple Cinnamon Oatmeal Pack', '');
+    var natureBar = new Snack('Nature Valley Oats Honey Granola Bars', '');
+    var crackerPack = new Snack('Peanut Butter Cracker Mix Packs', '');
+    var ritz = new Snack('Ritz Crackers', '');
+
+
+//add onclick "im finished adding snacks" here
+
+
+ 
+
+//this should create an array of object that includes the product's name and url
+
+
+//return the array
+
+//export the array where??
+
+
+});
+
+</script>
+
+</body>
+</html>
