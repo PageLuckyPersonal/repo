@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,21 +16,27 @@
 
     <div id="container">
         <h1>FYF Snack Machine</h1>
-        <p>Please select from one category at a time.</p>
-        <div id="top-menu-container">
-            <a href="#" onclick="myMenuFunction('btns');">
-                <div class="top-menu"></div>
-                <div class="top-menu"></div>
-                <div class="top-menu"></div>
-            </a>
-        </div>
+        <div class="upper-wrapper">
+            <p>Please select one category at a time.</p>
+            <div id="top-menu-container">
+                <a href="#" onclick="myMenuFunction('btns');">
+                    <div class="top-menu"></div>
+                    <div class="top-menu"></div>
+                    <div class="top-menu"></div>
+                </a>
+            </div>
 
-        <div id="btns">
-            <a href="#" onclick="toggle_visibility('snack-flexbox-sweets');"><button class="btn-top">Sweets</button></a>
-            <a href="#" onclick="toggle_visibility('snack-flexbox-savory');"><button class="btn-top">Savory</button></a>
-            <a href="#" onclick="toggle_visibility('snack-flexbox-chips');"><button class="btn-top">Chips</button></a>
-            <a href="#" onclick="toggle_visibility('snack-flexbox-bars');"><button class="btn-top">Bars</button></a>
-            <a href="#" onclick="toggle_visibility('snack-flexbox-breads');"><button class="btn-top">Breads</button></a>
+            <div id="btns">
+                <a href="#" onclick="toggle_visibility('snack-flexbox-sweets');"><button
+                        class="btn-top">Sweets</button></a>
+                <a href="#" onclick="toggle_visibility('snack-flexbox-savory');"><button
+                        class="btn-top">Savory</button></a>
+                <a href="#" onclick="toggle_visibility('snack-flexbox-chips');"><button
+                        class="btn-top">Chips</button></a>
+                <a href="#" onclick="toggle_visibility('snack-flexbox-bars');"><button class="btn-top">Bars</button></a>
+                <a href="#" onclick="toggle_visibility('snack-flexbox-breads');"><button
+                        class="btn-top">Breads</button></a>
+            </div>
         </div>
 
         <div id="snack-flexbox-sweets">
@@ -277,9 +283,9 @@
                 <h3><a href="#" onclick="toggle_visibility('snack-flexbox-breads');">Done adding breads?</a></h3>
             </div>
         </div>
-
+        <div class="upper-wrapper">
         <button onclick="snacksCollection()" id="submit-btn">Submit</button>
-    </div>
+        </div>
 
     <script>
         function toggle_visibility(id) {
@@ -387,7 +393,7 @@
             'https://www.amazon.com/Frito-Lay-Baked-Popped-Variety-Count/dp/B07GFK9LSX');
         //var fish = new Snack('Goldfish','https://www.amazon.com/Pepperidge-Farm-Goldfish-Crackers-Multi-pack/dp/B01A5GQ192');
         $('#fish').data('Goldfish',
-        'https://www.amazon.com/Pepperidge-Farm-Goldfish-Crackers-Multi-pack/dp/B01A5GQ192');
+            'https://www.amazon.com/Pepperidge-Farm-Goldfish-Crackers-Multi-pack/dp/B01A5GQ192');
         //var veggie = new Snack('Eaten Path Veggie Crisps', 'https://www.amazon.com/gp/product/B06WWKK395');
         $('#crisps').data('Eaten Path Veggie Crisps', 'https://www.amazon.com/gp/product/B06WWKK395');
         //var straws = new Snack('Garden Veggie Straws', 'https://www.amazon.com/gp/product/B06WWJXN3K');
