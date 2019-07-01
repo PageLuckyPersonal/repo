@@ -17,6 +17,14 @@
     <div id="container">
         <h1>FYF Snack Machine</h1>
         <p>Please select from one category at a time.</p>
+        <div id="top-menu-container">
+            <a href="#" onclick="myMenuFunction('btns');">
+                <div class="top-menu"></div>
+                <div class="top-menu"></div>
+                <div class="top-menu"></div>
+            </a>
+        </div>
+
         <div id="btns">
             <a href="#" onclick="toggle_visibility('snack-flexbox-sweets');"><button class="btn-top">Sweets</button></a>
             <a href="#" onclick="toggle_visibility('snack-flexbox-savory');"><button class="btn-top">Savory</button></a>
@@ -282,11 +290,18 @@
                 snackBox.style.display = 'flex';
         }
 
+        function myMenuFunction(id) {
+            var myMenu = document.getElementById(id);
+            if (myMenu.style.display == 'flex')
+                myMenu.style.display = 'none';
+            else
+                myMenu.style.display = 'flex';
+        }
 
         //gets everything that's green/added for export
         var elements = document.getElementsByClassName('class2');
 
-        
+
 
         //changes CSS from null, green, red
         function classToggle() {
@@ -312,68 +327,111 @@
             this.productName = name;
             this.productUrl = url;
         }*/
-        
-        function snacksCollection(){
-            for (i = 0; i<elements.length; i++) {    
-                console.log(elements[i].childNodes[1]);
+
+        function snacksCollection() {
+            for (i = 0; i < elements.length; i++) {
+                console.log(elements);
             }
         }
 
-//Path to dynamic jQuery 
-// attributes - childNodes - [1] - jQuery has different numbers
+        //Path to dynamic jQuery 
+        // attributes - childNodes - [1] - jQuery has different numbers
 
 
 
         $('#fiber').data('Fiber one cookies', 'https://www.amazon.com/gp/product/B00KTK8UQ2');
         //var pocky = new Snack('Japanese Pocky Sticks','https://www.amazon.com/Pocky-Chocolate-Covered-Biscuit-Thailand/dp/B07981SSBZ');
-        $('#pocky').data('Japanese Pocky Sticks','https://www.amazon.com/Pocky-Chocolate-Covered-Biscuit-Thailand/dp/B07981SSBZ');
+        $('#pocky').data('Japanese Pocky Sticks',
+            'https://www.amazon.com/Pocky-Chocolate-Covered-Biscuit-Thailand/dp/B07981SSBZ');
         //var milano = new Snack('Milano Cookies', 'https://www.amazon.com/gp/product/B00PQNJ9W6');
-        $('#milano').data('Milano Cookies','https://www.amazon.com/gp/product/B00PQNJ9W6');
+        $('#milano').data('Milano Cookies', 'https://www.amazon.com/gp/product/B00PQNJ9W6');
         //var cookiePack = new Snack('Mixed Cookies Pack', 'https://www.amazon.com/gp/product/B076CN84HN');
         $('#cookies').data('Mixed Cookies Pack', 'https://www.amazon.com/gp/product/B076CN84HN');
         //var krispies = new Snack('Rice Krispies Treats', 'https://www.amazon.com/gp/product/B01HHVWWMI');
         $('#krispies').data('Rice Krispies Treats', 'https://www.amazon.com/gp/product/B01HHVWWMI');
         //var rainbow = new Snack('Keebler Rainbow Cookies','https://www.amazon.com/Keebler-Chips-Deluxe-Cookies-Rainbow-Chocolate/dp/B00OYR6EUU');
-        $('#rainbow').data('Keebler Rainbow Cookies','https://www.amazon.com/Keebler-Chips-Deluxe-Cookies-Rainbow-Chocolate/dp/B00OYR6EUU');
+        $('#rainbow').data('Keebler Rainbow Cookies',
+            'https://www.amazon.com/Keebler-Chips-Deluxe-Cookies-Rainbow-Chocolate/dp/B00OYR6EUU');
         //var chocoAlmonds = new Snack('Dark Chocolate Almonds','https://www.amazon.com/Blue-Diamond-Almonds-Roasted-calorie/dp/B07MYGYYTR');
-        $('#choco-almond').data('Dark Chocolate Almonds','https://www.amazon.com/Blue-Diamond-Almonds-Roasted-calorie/dp/B07MYGYYTR');
+        $('#choco-almond').data('Dark Chocolate Almonds',
+            'https://www.amazon.com/Blue-Diamond-Almonds-Roasted-calorie/dp/B07MYGYYTR');
         //var jerky = new Snack('Jack Links Beef Jerky','https://www.amazon.com/Jack-Links-Original-Teriyaki-Single-serve/dp/B017DF6NK0');
+        $('#jerky').data('Jack Links Beef Jerky',
+            'https://www.amazon.com/Jack-Links-Original-Teriyaki-Single-serve/dp/B017DF6NK0');
         //var diamond = new Snack('Blue Diamond 100 Calorie Almonds','https://www.amazon.com/Blue-Diamond-Almonds-Lightly-Calorie/dp/B07MYGQM56');
+        $('#diamond').data('Blue Diamond 100 Calorie Almonds',
+            'https://www.amazon.com/Blue-Diamond-Almonds-Lightly-Calorie/dp/B07MYGQM56');
         //var edamame = new Snack('Sea Salt Edamame','https://www.amazon.com/Seapoint-Farms-Roasted-Edamame-Ounce/dp/B00F9XUMS8');
+        $('#edamame').data('Sea Salt Edamame', 'https://www.amazon.com/Seapoint-Farms-Roasted-Edamame-Ounce/dp/B00F9XUMS8');
         //var nuts = new Snack('Planters Nutrition Nut Packs','https://www.amazon.com/Planters-Nutrition-Wholesome-Nut-Ounce/dp/B00UJIXVNG');
-        $('#planters').data('Planters Nutrition Nut Packs','https://www.amazon.com/Planters-Nutrition-Wholesome-Nut-Ounce/dp/B00UJIXVNG');
+        $('#planters').data('Planters Nutrition Nut Packs',
+            'https://www.amazon.com/Planters-Nutrition-Wholesome-Nut-Ounce/dp/B00UJIXVNG');
         //var nutsPack = new Snack('Planters Mixed Nuts Variety Pack','https://www.amazon.com/Planters-Nuts-Variety-Pack-count/dp/B008GVJ9S4');
+        $('#planters-pack').data('Planters Mixed Nuts Variety Pack',
+            'https://www.amazon.com/Planters-Nuts-Variety-Pack-count/dp/B008GVJ9S4');
         //var spicy = new Snack('Spicy Cheez-Its','https://www.amazon.com/Cheez-Baked-Snack-Crackers-Spicy/dp/B071VZCM1H');
+        $('#spicy-cheezits').data('Spicy Cheez-Its', 'https://www.amazon.com/Cheez-Baked-Snack-Crackers-Spicy/dp/B071VZCM1H');
         //var cheezPack = new Snack('Cheeze-Its Variety Pack', 'https://www.amazon.com/Cheez-Crackers-Variety-Original-Cheddar/dp/B06X9WNQFV');
+        $('#cheezits-variety').data('Cheeze-Its Variety Pack',
+            'https://www.amazon.com/Cheez-Crackers-Variety-Original-Cheddar/dp/B06X9WNQFV');
         //var cheez = new Snack('Regular Cheez-Its','https://www.amazon.com/Cheez-Cheese-Crackers-Original-Single/dp/B01HHVSB8M');
+        $('#regular-cheez').data('Regular Cheez-Its', 'https://www.amazon.com/Cheez-Cheese-Crackers-Original-Single/dp/B01HHVSB8M');
         //var chipsPack = new Snack('Simply Mixed Chips Pack','https://www.amazon.com/Frito-Lay-Purely-Delicious-Mix-Count/dp/B07GFHTGTG');
+        $('#chips-pack').data('Simply Mixed Chips Pack',
+            'https://www.amazon.com/Frito-Lay-Purely-Delicious-Mix-Count/dp/B07GFHTGTG');
         //var bakedChips = new Snack('Baked Popped Chips Mix','https://www.amazon.com/Frito-Lay-Baked-Popped-Variety-Count/dp/B07GFK9LSX');
+        $('#popped').data('Baked Popped Chips Mix',
+            'https://www.amazon.com/Frito-Lay-Baked-Popped-Variety-Count/dp/B07GFK9LSX');
         //var fish = new Snack('Goldfish','https://www.amazon.com/Pepperidge-Farm-Goldfish-Crackers-Multi-pack/dp/B01A5GQ192');
+        $('#fish').data('Goldfish', 'https://www.amazon.com/Pepperidge-Farm-Goldfish-Crackers-Multi-pack/dp/B01A5GQ192');
         //var veggie = new Snack('Eaten Path Veggie Crisps', 'https://www.amazon.com/gp/product/B06WWKK395');
+        $('#crisps').data('Eaten Path Veggie Crisps', 'https://www.amazon.com/gp/product/B06WWKK395');
         //var straws = new Snack('Garden Veggie Straws', 'https://www.amazon.com/gp/product/B06WWJXN3K');
+        $('#straws').data('Garden Veggie Straws', 'https://www.amazon.com/gp/product/B06WWJXN3K');
         //var butterBar = new Snack('Almond Butter Breakfast Protein Bars','https://www.amazon.com/KIND-Breakfast-Protein-Almond-Butter/dp/B0748DHRYG');
+        $('#protein-bars').data('Almond Butter Breakfast Protein Bars','https://www.amazon.com/KIND-Breakfast-Protein-Almond-Butter/dp/B0748DHRYG');
         //var caramelBar = new Snack('Caramel Almond Sea Salt Bars','https://www.amazon.com/KIND-Caramel-Almond-Gluten-Ounce/dp/B00IZF0LCE');
+        $('#caramel-bars').data('Caramel Almond Sea Salt Bars','https://www.amazon.com/KIND-Caramel-Almond-Gluten-Ounce/dp/B00IZF0LCE');
         //var peanutBar = new Snack('Chocolate Peanut Butter Breakfast Bars','https://www.amazon.com/KIND-Filled-Chocolate-Peanut-Butter/dp/B07KKT47DK');
+        $('#breakfast-bars').data('Chocolate Peanut Butter Breakfast Bars','https://www.amazon.com/KIND-Filled-Chocolate-Peanut-Butter/dp/B07KKT47DK');
         //var cherryBar = new Snack('Dark Chocolate Cherry Cashew Bars','https://www.amazon.com/KIND-Chocolate-Cherry-Cashew-Antioxidants/dp/B003TMZQC8');
+        $('#cherry-bars').data('Dark Chocolate Cherry Cashew Bars','https://www.amazon.com/KIND-Chocolate-Cherry-Cashew-Antioxidants/dp/B003TMZQC8');
         //var chunkBar = new Snack('Dark Chocolate Chunk Breakfast Bars','https://www.amazon.com/Healthy-Grains-Granola-Chocolate-Chunk/dp/B00HNQB9CW');
+        $('#chunk-bars').data('Dark Chocolate Chunk Breakfast Bars',
+            'https://www.amazon.com/Healthy-Grains-Granola-Chocolate-Chunk/dp/B00HNQB9CW');
         //var darkBar = new Snack('Dark Chocolate Nuts Sea Salt Bars','https://www.amazon.com/KIND-Chocolate-Gluten-Sugar-1-4oz/dp/B00JQQAWSY');
+        $('#choco-bars').data('Dark Chocolate Nuts Sea Salt Bars',
+            'https://www.amazon.com/KIND-Chocolate-Gluten-Sugar-1-4oz/dp/B00JQQAWSY');
         //var cLuna = new Snack('Chocolate Luna Bars','https://www.amazon.com/LUNA-BAR-Gluten-Chocolate-Flavor/dp/B0000CEO81');
+        $('#c-luna').data('Chocolate Luna Bars', 'https://www.amazon.com/LUNA-BAR-Gluten-Chocolate-Flavor/dp/B0000CEO81');
         //var wLuna = new Snack('White Chocolate Luna Bars','https://www.amazon.com/LUNA-BAR-Gluten-Chocolate-Macadamia/dp/B07MYHTN9W');
-        //var mixedLuna = new Snack('Mixed Luna Bars','https://www.amazon.com/LUNA-BAR-Gluten-Chocolate-Flavor/dp/B07D83FVYH')
+        $('#white-luna').data('White Chocolate Luna Bars',
+            'https://www.amazon.com/LUNA-BAR-Gluten-Chocolate-Macadamia/dp/B07MYHTN9W');
+        //var mixedLuna = new Snack('Mixed Luna Bars','https://www.amazon.com/LUNA-BAR-Gluten-Chocolate-Flavor/dp/B07D83FVYH');
+        $('#mixed-luna').data('Mixed Luna Bars', 'https://www.amazon.com/LUNA-BAR-Gluten-Chocolate-Flavor/dp/B07D83FVYH');
         //var peanutBar = new Snack('Peanut Butter Dark Chocolate Bars','https://www.amazon.com/KIND-Peanut-Butter-Chocolate-Protein/dp/B003TNANSO');
+        $('#pbc-bars').data('Peanut Butter Dark Chocolate Bars',
+            'https://www.amazon.com/KIND-Peanut-Butter-Chocolate-Protein/dp/B003TNANSO');
         //var blueberry = new Snack('Pomegranate Blueberry Pistachio Bars','https://www.amazon.com/KIND-Pomegranate-Blueberry-Pistashio-Antioxidants/dp/B01HI76IYE');
+        $('#blueberry').data('Pomegranate Blueberry Pistachio Bars',
+            'https://www.amazon.com/KIND-Pomegranate-Blueberry-Pistashio-Antioxidants/dp/B01HI76IYE');
         //var dipps = new Snack('Quaker Chewy Dipps Bars','https://www.amazon.com/Quaker-Chocolate-Covered-Granola-Packaging/dp/B079P8YRBB');
+        $('#dipps').data('Quaker Chewy Dipps Bars',
+            'https://www.amazon.com/Quaker-Chocolate-Covered-Granola-Packaging/dp/B079P8YRBB');
         //var oatmeal = new Snack('Apple Cinnamon Oatmeal Pack', 'https://www.amazon.com/gp/product/B000E4ALHO');
+        $('#apple').data('Apple Cinnamon Oatmeal Pack', 'https://www.amazon.com/gp/product/B000E4ALHO');
         //var natureBar = new Snack('Nature Valley Oats Honey Granola Bars','https://www.amazon.com/Nature-Valley-Granola-Crunchy-Honey/dp/B00R1H0AYQ');
+        $('#nature-valley').data('Nature Valley Oats Honey Granola Bars',
+            'https://www.amazon.com/Nature-Valley-Granola-Crunchy-Honey/dp/B00R1H0AYQ');
         //var crackerPack = new Snack('Peanut Butter Cracker Mix Packs','https://www.amazon.com/Ritz-Peanut-Cracker-Sandwiches-Individual/dp/B076CJVH6X');
+        $('#ritz-cracker').data('Peanut Butter Cracker Mix Packs',
+            'https://www.amazon.com/Ritz-Peanut-Cracker-Sandwiches-Individual/dp/B076CJVH6X');
         //var ritz = new Snack('Ritz Crackers', 'https://www.amazon.com/gp/product/B01C6QUJ5G');
-
+        $('#cracker').data('Ritz Crackers', 'https://www.amazon.com/gp/product/B01C6QUJ5G');
 
 
 
         //this should create an array of object that includes the product's name and url
-
-
     </script>
 
 </body>
