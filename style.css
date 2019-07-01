@@ -1,0 +1,180 @@
+* {
+    box-sizing: border box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-image: url('images/background-image.png');
+}
+
+h1 {
+    padding-top: 15px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+h3 {
+    letter-spacing: 1.5px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+}
+
+#container {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+#btns {
+    display: none;
+    flex-direction: column;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.btn-top {
+    margin: 2px;
+    width: 100px;
+}
+
+#submit-btn {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(118, 193, 110);
+    box-shadow: 0 0 7px #333;
+    width: 100px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.top-menu {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+button {
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    padding: 4px 11px 4px 11px;
+    background-color: rgb(96, 92, 171);
+    color: #ffffff;
+    border: none;
+    vertical-align: middle;
+    font-family: 'Kanit', sans-serif;
+}
+
+#snack-flexbox-sweets {
+    display: none;
+    flex-wrap: wrap;
+}
+
+#snack-flexbox-savory {
+    display: none;
+    flex-wrap: wrap;
+}
+
+#snack-flexbox-chips {
+    display: none;
+    flex-wrap: wrap;
+}
+
+#snack-flexbox-bars {
+    display: none;
+    flex-wrap: wrap;
+}
+
+#snack-flexbox-breads {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.snack-item {
+    flex: 1;
+    padding: 3px 3px 20px 3px;
+}
+
+.snack-h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.snack-image {
+    max-width: 250px;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+.snack-image:hover {
+    transform: rotate(-10deg);
+}
+
+.class1 {
+    border: none;
+}
+
+.class2 {
+    border: 2px solid rgb(118, 193, 110);
+    background-color: rgb(118, 193, 110, .3);
+    border-radius: 3px;
+}
+
+.more-snacks {
+    display: block;
+}
+
+.close-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.close-section a {
+    color: black;
+}
+
+
+
+@media (min-width: 768px) {
+    #container {
+        margin: 0 2% 0 2%;
+        padding: 10px 15px;
+    }
+
+    h1 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    #top-menu-container {
+        display: none;
+    }
+
+    #btns {
+        display: flex;
+    }
+
+    .snack-item {
+        flex: 1;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #btns {
+        width: 100%;
+        flex-direction: row;
+    }
+}
