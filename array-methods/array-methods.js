@@ -19,8 +19,8 @@ var expensiveThings = ["diamonds", "apartment", "cars", "boyfriend"];
 var expensiveThingsList = expensiveThings.copyWithin(1,3);
 
 console.log(expensiveThingsList);
-//three numbers (start here, replace from this number to *before* this number)
+//three numbers (start here, replace from this number to this number)
 var expensiveThings2 = ["saphire", "gold", "rubies", "champagne"];
-var expensiveThingsList2 = expensiveThings2.copyWithin(0,1,3);
+var expensiveThingsList2 = expensiveThings2.copyWithin(1,0,3);
 
 console.log(expensiveThingsList2);
